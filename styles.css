@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*,*::before,*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+    --fw-normal: 400;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  display: grid;
+  background-color: var(--off-black);
+  place-content: center;
+}
+
+.container {
+  margin-top: 20px;
+  background-color: var(--dark-grey);
+  border-radius: 1.5rem;
+  padding: 0 40px;
+  max-width: 100%;
+}
+
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--white);
+  font-size: 14px;
+}
+
+
+
+.profile-head img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 30px;
+}
+
+.profile-head h1 {
+  font-size: 24px;
+  color: var(--white);
+  font-weight: var(--fw-semi-bold);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.profile-head h2 {
+  font-size: 14px;
+  color: var(--green);
+  font-weight: var(--fw-semi-bold);
+  margin-bottom: 30px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+
+.selection ul li {
+  list-style: none;
+  margin: 15px 0;
+  font-size: 14px;
+  font-weight: var(--fw-normal); 
+  width: 100%;
+}
+
+a {
+  background-color: var(--grey);
+  text-decoration: none;
+  color: var(--white);
+  font-weight: var(--fw-normal);
+  display: block;
+  border-radius: 1.1rem;
+  padding: 15px 20px;
+  transition: all 0.3s ease-in-out;
+  font-weight: var(--fw-semi-bold);
+}
+
+a:hover {
+  background-color: var(--green);
+  color: var(--off-black);
+}
